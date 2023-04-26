@@ -34,8 +34,27 @@ input {
   color: white;
   border: none;
   border-radius: 0.5em;
+  outline: none;
 }
 
 button {
   outline: none;
+  border: none;
+}
+
+#tempToy {
+  transform: translate(50%, 290%);
+  width: 300px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: rgb(72, 74, 237);
+  color: white;
+  border-radius: 0.5em;
+}
+
+.display-container {
+  padding: 1em;
 }
