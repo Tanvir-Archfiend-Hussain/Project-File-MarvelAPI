@@ -12,5 +12,9 @@ fetch("https://api.waifu.im/ass")
   */
 
 fetch("https://api.waifu.im/ass")
-  .then(x)
-  .then((data) => console.log(data));
+  .then((value)=> {
+    return value
+  })
+  .then((value)=> {
+    return value.json
+  })
