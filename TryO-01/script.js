@@ -3,7 +3,10 @@ fetch('https://cdn.waifu.im/6618.jpeg').then(res => {
     return res.blob()
 }).then(res => {
     console.log(res)
-    document.getElementById('rainbow').src = URL.createObjectURL(res);
+    document.getElementById('ainbow').src = URL.createObjectURL(res);
+}).catch(error => {
+    console.log('!?!?!?!?!?!?!?!?!?error!?!?!?!?!?!?!?!?!?')
+    console.error(error);
 })
 
 fetch('https://cdn.waifu.im/4828.jpeg').then(roseB => {
@@ -74,4 +77,8 @@ fetch('https://lastfm.freetls.fastly.net/i/u/ar0/058fc4006ebb4ad68b35366546e1aca
     return newXD.blob()
 }).then(newXD => {
     document.getElementById('newID').src = URL.createObjectURL(newXD)
+})
+.catch(error => {
+    console.log('!?!?!?!?!?!?!?!?!?error!?!?!?!?!?!?!?!?!?')
+    console.error(error);
 })
