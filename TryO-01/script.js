@@ -31,3 +31,9 @@ fetch('https://cdn.waifu.im/1698.jpeg').then(paizur => {
 }).then(paizur => {
     document.getElementById('paizurID').src = URL.createObjectURL(paizur)
 })
+
+fetch('https://cdn.waifu.im/4835.png').then(oral => {
+    return oral.blob()
+}).then(oral => {
+    document.getElementById('oralID').src = URL.createObjectURL(oral)
+})
