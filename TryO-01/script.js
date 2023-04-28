@@ -53,5 +53,19 @@ fetch('https://cdn.waifu.im/4840.jpeg').then(hentai => {
 fetch('https://cdn.waifu.im/2262.jpeg').then(ass => {
     return ass.blob()
 }).then(ass => {
-    document.getElementById('assID').src =URL.createObjectURL(ass)
+    document.getElementById('assID').src = URL.createObjectURL(ass)
 })
+
+fetch('https://cdn.waifu.im/3250.jpeg').then(waifu => {
+    return waifu.blob()
+}).then(waifu => {
+    document.getElementById('waifu').src = URL.createObjectURL(waifu)
+})
+
+function clicker() {
+   fetch('https://cdn.waifu.im/3250.jpeg').then(waifu => {
+    return waifu.blob()
+}).then(waifu => {
+    document.getElementById('clickID').src = URL.createObjectURL(waifu)
+}) 
+}
