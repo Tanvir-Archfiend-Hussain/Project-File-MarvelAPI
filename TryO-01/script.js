@@ -49,3 +49,9 @@ fetch('https://cdn.waifu.im/4840.jpeg').then(hentai => {
 }).then(hentai => {
     document.getElementById('hentai').src = URL.createObjectURL(hentai)
 })
+
+fetch('https://cdn.waifu.im/2262.jpeg').then(ass => {
+    return ass.blob()
+}).then(ass => {
+    document.getElementById('assID').src =URL.createObjectURL(ass)
+})
