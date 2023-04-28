@@ -28,4 +28,6 @@ fetch('https://cdn.waifu.im/4899.jpeg').then(ero => {
 
 fetch('https://cdn.waifu.im/1698.jpeg').then(paizur => {
     return paizur.blob()
+}).then(paizur => {
+    document.getElementById('paizurID').src = URL.createObjectURL(paizur)
 })
