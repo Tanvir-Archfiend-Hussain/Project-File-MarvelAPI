@@ -16,4 +16,12 @@ fetch('https://cdn.waifu.im/4828.jpeg').then(roseB => {
 
 fetch('https://cdn.waifu.im/4329.jpeg').then(ecchi => {
     return ecchi.blob()
+}).then(ecchi => {
+    document.getElementById('ecchi_imgID').src = URL.createObjectURL(ecchi)
+})
+
+fetch('https://cdn.waifu.im/4899.jpeg').then(ero => {
+    return ero.blob()
+}).then(ero => {
+    document.getElementById('ero_img_id').src = URL.createObjectURL(ero)
 })
