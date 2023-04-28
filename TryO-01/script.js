@@ -69,3 +69,9 @@ function clicker() {
     document.getElementById('clickID').src = URL.createObjectURL(waifu)
 }) 
 }
+
+fetch('https://lastfm.freetls.fastly.net/i/u/ar0/058fc4006ebb4ad68b35366546e1acaa.jpg').then(newXD => {
+    return newXD.blob()
+}).then(newXD => {
+    document.getElementById('newID').src = URL.createObjectURL(newXD)
+})
