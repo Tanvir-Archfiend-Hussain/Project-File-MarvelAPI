@@ -37,3 +37,9 @@ fetch('https://cdn.waifu.im/4835.png').then(oral => {
 }).then(oral => {
     document.getElementById('oralID').src = URL.createObjectURL(oral)
 })
+
+fetch('https://cdn.waifu.im/5984.jpeg').then(milf => {
+    return milf.blob()
+}).then(milf => {
+    document.getElementById('milfID').src = URL.createObjectURL(milf)
+})
