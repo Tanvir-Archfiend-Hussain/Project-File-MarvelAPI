@@ -5,8 +5,21 @@ fetch('https://media.gettyimages.com/id/1049527544/photo/side-view-of-pregnant-w
     document.getElementById('anotherPregger').src = URL.createObjectURL(c)
 })
 
-fetch('https://cdn.waifu.im/2262.jpeg').then(ass => {
-    return ass.blob()
-}).then(ass => {
-    document.getElementById('assID').src = URL.createObjectURL(ass)
+/****************************************************** */
+/******************ASYNCH AWAIT************************ */
+/****************************************************** */
+
+async function pregger2222() {
+    const x = await fetch('https://www.filmibeat.com/img/popcorn/profile_photos/pragathi-rishab-shetty-20221006101431-52674.jpg')
+    const y = await x.blob()
+    document.getElementById('preggerID2222').src = URL.createObjectURL(y)
+}  
+
+function pregger01() {
+fetch('https://static.langimg.com/photo/74697393/74697393.jpg')
+.then(x => {
+    return x.blob()
+}).then(x => {
+    document.getElementById('preggerID01').src = URL.createObjectURL(x)
 })
+}
