@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://i.ytimg.com/vi/TEZBFGw2uWs/maxresdefault.jpg);
+}
+
+.container {
+  background-color: white;
+  padding: 3em 2.5em;
+  width: 80vw;
+  max-width: 37.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.62em;
+  box-sizing: 0 1.25em 1.8em black;
+}
+
+.search-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+  background-color: white;
+}
+
+.search-wrapper button {
+  font-size: 1em;
+  background-color: purple;
+  color: white;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.search-wrapper input {
+  font-size: 1em;
+  padding: 0 0.62em;
+  border: none;
+  border-bottom: 2px solid purple;
+  outline: none;
+  color: gray;
+}
